@@ -8,7 +8,7 @@ Tinyhttp是一个轻量型型Http Server, 使用C语言开发，全部代码500�
 
 具体逻辑：主程序无限循环，监听套接字上是否有连接请求。一个线程处理一个连接请求，并解析HTTP请求，做一些判断。如果请求的是静态文件就输出给客服端。如果请求的是动态文件，就创建一个进程执行cgi程序，并创建管道进行父子进程间通信。
 
-![TinyHttpd流程图](D:\github\TinyHttpd\images\TinyHttpd流程图.jpg)
+![TinyHttpd流程图](images/TinyHttpd流程图.jpg)
 
 **每个函数的作用：**
 
